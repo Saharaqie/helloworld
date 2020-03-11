@@ -1,4 +1,4 @@
-package com.mycom.helloworld;
+package test.gh1314;
 
 import org.osgl.mvc.annotation.PostAction;
 
