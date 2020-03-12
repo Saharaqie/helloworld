@@ -1,0 +1,25 @@
+Scenario(post_form):
+  interactions:
+    - description: send to endpoint with single param and no fields
+      request:
+        post: /bars
+        params:
+          name: foo
+      response:
+        name: foo
+    - description: send to endpoint with two params and no fields
+      request:
+        post: /bars2
+        params:
+          id: 2
+          "bar.name": foo
+      response:
+        name: foo
+    - description: send to endpoint with single param and single field
+      request:
+        post: /bars3
+        params:
+          id: 2
+          "bar.name": foo
+      response:
+        name: foo
